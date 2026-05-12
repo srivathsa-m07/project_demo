@@ -1,8 +1,7 @@
-yaml
 services:
   - type: web
-    name: flask-app
-    env: python
+    name: cicd-demo
+    runtime: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
-    plan: free
+
